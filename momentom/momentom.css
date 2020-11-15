@@ -1,0 +1,86 @@
+.reset_B{
+  font-size: 16px;
+  color: white;
+  border: currentColor;
+  float: right;
+}
+.btn{
+  cursor:pointer;
+}
+.center{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 20%;
+  padding-right: 150px;
+
+}
+.parents{
+  display: table;
+}
+
+button{
+  background-color: rgba(0,0,0,0);
+  border-radius: 5px;
+  border : 2px solid black;
+}
+body{
+  background-color: black;
+  color : white;
+  transition:  color 0.5s ease-in-out;
+  margin : 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.js-weather{
+  color:white;
+  margin: 2px;
+  text-align: left;
+  font-size: 20px;
+  float:left;
+}
+.js-toDoForm > button,.show_inline{
+  display: inline;
+  text-align: center;
+}
+
+.clicked{
+  color: #7f8c8d;
+}
+.form,
+.greeting{
+  display: none;
+}
+
+.showing{
+  display: block;
+}
+.hide{
+  display: none;
+}
+
+@@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+.bg_image{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.2s linear;
+}
+.js-title{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 12rem;
+}
+.js-toDoList{
+  padding : 0 30%;
+  text-align: left;
+}
