@@ -4,7 +4,7 @@ const USER_LS ="currentUser", SHOWING_CN ="showing";
 
 function saveName(text) {
     localStorage.setItem(USER_LS, text);
-    console.log(text);
+    //console.log(text);
 }
 
 function handleSubmit(event){
@@ -16,7 +16,7 @@ function handleSubmit(event){
 
 function askForName(){
   form.classList.add(SHOWING_CN);
-  console.log(form)
+  //console.log(form)
   form.addEventListener("submit",handleSubmit);
 }
 

@@ -59,7 +59,7 @@ function reset_input(){
 function handleSubmit(event){
   event.preventDefault();
   const currentValue=toDoInput.value;
-  console.log(currentValue.length);
+  //console.log(currentValue.length);
   paintToDo(currentValue);
   reset_input();
 }

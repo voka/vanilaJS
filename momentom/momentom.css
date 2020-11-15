@@ -1,9 +1,14 @@
-.reset_B{
+.btns{
+  float:right;
+}
+.btns > button{
   font-size: 16px;
   color: white;
   border: currentColor;
-  float: right;
+  display: flex;
+  margin : 15px 0px;
 }
+
 .btn{
   cursor:pointer;
 }

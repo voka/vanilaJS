@@ -1,9 +1,9 @@
 const board = document.querySelector(".js-toDoForm > input");
 const current_state = document.querySelector(".js-toDoForm > button")
-const reset = document.querySelector(".reset_B")
-
-console.log(board);
-console.log(current_state);
+const reset = document.querySelector(".reset_B");
+//const L_T_Paint = document.querySelector(".link_to_paint");
+//console.log(board);
+//console.log(current_state);
 
 const Showing_on = "show_inline";
 const Hide = "hide"
@@ -54,16 +54,30 @@ function show_angle_left(){
 function del_btn(){
   const c_s = current_state;
   while(c_s.hasChildNodes()){
-    console.log(c_s.firstChild);
+    //console.log(c_s.firstChild);
     c_s.removeChild(c_s.firstChild);
   }
 
+  
 }
+/*
+function paint(event){
+  event.preventDefault();
+  const a = document.createElement("a");
+  a.href = "https://clever-payne-b1ceee.netlify.app";
+  a.target = "_blank";
+  a.title = "PaintBoard";
+  a.innerText = "Paint";
+  L_T_Paint.appendChild(a);
+}*/
+
+
 function init(){
   board.classList.add(Hide);
   show_angle_right();
   current_state.addEventListener("click",handleClick);
   reset.addEventListener("click",reset_click);
+  //L_T_Paint.addEventListener("click",paint);
 }
 
 
