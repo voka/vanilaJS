@@ -58,3 +58,5 @@ npx tailwindcss-cli@latest build -o (tailwind.css-> css파일 만들고 싶은 �
 npx tailwindcss-cli@latest build ./src/tailwind.css -o ./dist/tailwind.css
 
 -o를 기준으로 앞에는 소스파일 경로, 뒤에는 css넣고싶은 경로 
+
+
