@@ -5,30 +5,12 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body class ="h-full">
-    <div class = "js-clock grid grid-cols-1 gap-3 h-full">
-        <p class = "self-end text-center font-mono text-5xl text-white-400 text-opacity-75">WHERE ARE YOU FROM ?</p>
-        <div class= "place-self-center">
-            <!-- <div class = "today text-center font-mono font-black text-2xl text-red-700 text-opacity-75"></div>
-            <div class = "christmas text-center font-mono font-black text-2xl text-pink-600 text-opacity-75"></div>   
-         -->
-            <select class = "countryName shadow text-center font-black font-mono text-3xl text-blue-600 text-opacity-75" name="countryName" id="countryName">
-                <option value="">--- Choose Your Country ---</option>
-                <option value="Korea">Korea</option>
-                <option value="America">America</option>
-                <option value="Greece">Greece</option>
-                <option value="Turkey">Turkey</option>
-                <option value="Prance">Prance</option>
-                <option value="Italy">Italy</option>
-                <option value="Finland">Finland</option>        
-            </select>
-        </br>
-        </div>
-        <div class="place-self-center self-start">
-            <span class="Msg px-2 border-4 border-yellow-300 border-opacity-75 shadow text-center text-3xl text-opacity-75 font-black text-green-500 " onclick="msg()">Message</span>
-            <span class="refreshBtn px-2 border-4 border-green-500 border-opacity-75 shadow text-center text-3xl text-opacity-75 font-black text-blue-500 " onclick="refresh()">Refrash</span>
-            <span class="reLocalBtn px-2 border-4 border-pink-500 border-opacity-50 shadow text-center text-3xl text-opacity-75 font-black text-red-500 " onclick="refreshLocal()">RefrashLocal</span>
-        </div>
-        </div>
-    <script src ="JSsrc/country.js"></script>
+    <div class = "js-clock grid grid-cols-1 gap-3 h-1/4">
+        <form class= "toDoForm place-self-center">
+            <input type="text" class = "text-center font-mono font-black text-2xl text-blue-700 text-opacity-75" placeholder="toDo"></div>
+            <div class = "toDoList text-center font-mono font-black text-2xl text-pink-600 text-opacity-75"></div>   
+        </form>
+    </div>
+    <script src ="JSsrc/toDoList.js"></script>
 </body>
 </html>
