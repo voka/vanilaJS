@@ -30,9 +30,7 @@ function save_todo(){
   localStorage.setItem(TODO_LS,JSON.stringify(toDos));
 }
 // filter함수의 조건을 만족시키는 경우에만 통과시키겠다
-function filter(toDo){
-  return toDO.id === 1
-}
+
 function del_todos(event){
   /*
   const del_id = event.target.parentNode.id;

@@ -60,3 +60,7 @@ npx tailwindcss-cli@latest build ./src/tailwind.css -o ./dist/tailwind.css
 -o를 기준으로 앞에는 소스파일 경로, 뒤에는 css넣고싶은 경로 
 
 
+
+console.dir을 할시 그 요소가 가지고 있는 정보 뿐만 아니라 부모요소 까지도 알 수 있다!!!!!!!!!!!!!!!!
+
+

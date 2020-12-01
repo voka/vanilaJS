@@ -7,4 +7,14 @@ LocalStorage는 key : value형태로 저장하게 돼있다.
 또, LocalStorage는 url형식으로 작동하는데 같urls로 접속하게 되면 그 상태가 유지됨
 
 LocalStorage에서 뭔가를 불러오고 싶으면 localStorage.getItem();을 하면 된다.
+
+forEach -> array에 대해 마치 for문같이 동작한다
+
+array.filter("함수") -> array의 요소만큼 함수가 실행된다!
+
+그래서 우리가 만족하는 조건을 가진 배열을 만든다음
+
+기존의 배열을 우리가 만들 배열로 바꾸는 것을 할 거다.
+
+
  
