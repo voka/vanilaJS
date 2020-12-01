@@ -7,15 +7,25 @@ const List = [];
 function paintToDo(value){
     const li = document.createElement('li');
     const delBtn = document.createElement('button');
+    const delImage = document.createElement('img');
+    const saveBtn = document.createElement('button');
+    const saveImage = document.createElement('img');
+    delImage.setAttribute("src","img/X.png");
+    saveImage.setAttribute("src","img/save.jpg");
+    delImage.style.width = '25px';
+    saveImage.style.width = '25px';
+    delImage.style.height = '25px';
+    saveImage.style.height = '25px';
     delBtn.classList.add('shadow');
-    delBtn.classList.add('font-black');
-    delBtn.classList.add('text-pink-700');
-    delBtn.classList.add('font-mono');
-    delBtn.innerText = " X ";
+    saveBtn.classList.add('shadow');
+    delBtn.appendChild(delImage);
+    saveBtn.appendChild(saveImage);
     const span = document.createElement('span');
     span.innerText = value;
-    li.appendChild(delBtn);
+    
     li.appendChild(span);
+    li.appendChild(delBtn);
+    li.appendChild(saveBtn);
     toDoList.appendChild(li);
 }
 
