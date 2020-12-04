@@ -64,3 +64,12 @@ npx tailwindcss-cli@latest build ./src/tailwind.css -o ./dist/tailwind.css
 console.dir을 할시 그 요소가 가지고 있는 정보 뿐만 아니라 부모요소 까지도 알 수 있다!!!!!!!!!!!!!!!!
 
 
+1. git fetch 명령어를 통해서 원격저장소의 branch를 가져옵니다.
+
+2. git branch -a 명령어를 입력 해 보면, 원격 저장소의 branch가 빨간색으로 보입니다. 
+
+3. git merge (선택하고싶은 로컬 branch) 를 입력하면 로컬 branch에 원격저장소의 내용이 들어갑니다. 
+
+4. 실제 폴더로 가면 프로젝트 폴더들이 다운로드 된 것을 볼 수 있습니다.
+
+!!!! 매우 유용하구만 이거 연결 끊었다가 다시 할 필요도 없고 !! 굳굳

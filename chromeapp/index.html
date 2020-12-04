@@ -2,27 +2,36 @@
 <html class = "h-full">
 <head>
     <title>Something</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class ="h-full">
-    <div class = "grid grid-cols-1 gap-3 h-full">
-        <div class = "place-self-center self- center">
-            
-            <div class = "self-end text-center font-mono text-5xl text-opacity-75">Random Number Game</div>
-            <br>
-            <div class = "Generate text-center font-mono font-black text-2xl text-red-600 text-opacity-75">Generate a number between 0 and <span class="loadValue" >100 </span></div>
-            <input type ="range" min="0" max="200" step="1" class = "Choose w-full">
-          
-            <div class = "Guess text-center font-mono font-black text-2xl text-green-600 text-opacity-75 my-5">Guess the number : 
-                <input type="number" class = "GuessNum text-center font-mono font-black text-2xl text-blue-700 text-opacity-75">
-                <span class = "Play px-2 border-4 border-green-500 border-opacity-75text-center font-mono font-black text-yellow-700 text-opacity-75">Play!</span>
-            </div>
-            <div class = "chooseNum text-center font-mono font-black text-2xl text-opacity-75"> </div>
-            
-            <div class = "wonOrlost text-center font-mono font-black text-2xl text-green-600 text-opacity-75 my-5"></div>
-
-        </div>
+        <!-- @NOTE: the onclicks are used for touch devices since I'm lazy and didnt use <a> tags -->
+    <div class="Menu">
+        <ul class="Menu-list" data-offset="10">
+        <li class="Menu-list-item" data-offset="20" onclick>
+            Home
+            <span class="Mask"><span>Home</span></span>
+            <span class="Mask"><span>Home</span></span>
+        </li>
+        <li class="Menu-list-item" data-offset="16" onclick>
+            About
+            <span class="Mask"><span>About</span></span>
+            <span class="Mask"><span>About</span></span>
+        </li>
+        <li class="Menu-list-item" data-offset="12" onclick>
+            Work
+            <span class="Mask"><span>Work</span></span>
+            <span class="Mask"><span>Work</span></span>
+        </li>
+        <li class="Menu-list-item" data-offset="8" onclick>
+            Contact
+            <span class="Mask"><span>Contact</span></span>
+            <span class="Mask"><span>Contact</span></span>
+        </li>
+        </ul>
     </div>
-    <script src ="JSsrc/Casino.js"></script>
+    <!-- <script src ="JSsrc/toDoList.js"></script> -->
+    <script src ="JSsrc/detector.js"></script>
 </body>
-</html>
+</html> 

@@ -18,7 +18,7 @@ function Guess() {
   }
   var ranNum = Math.floor(Math.random() * range.value);
   chooseNum.innerHTML = `You chose :${GuessNum.value}, the machine chose: ${ranNum}`;
-  if (GuessNum.value === ranNum) {
+  if (GuessNum.value == ranNum) {
     wonOrlost.innerHTML = "You Won!!";
   } else {
     wonOrlost.innerHTML = "You lost!";
