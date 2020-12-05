@@ -1,80 +1,88 @@
-body {
-  font-family: "Gilroy ExtraBold", system-ui, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-kerning: normal;
-  -webkit-text-size-adjust: 100%; }
+@import url(index.css);
 
-html,
 body {
   width: 100vw;
-  height: 100vh; }
-
-body {
-  background: linear-gradient(45deg, #02001F, #1F1B4E);
-  transform-style: preserve-3d;
-  transform: perspective(60rem);
-  position: fixed;
+  height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: center; }
-
-.Menu-list {
-  font-size: 8rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-  text-align: center;
-  display: flex;
   flex-direction: column;
+  margin: 0;
+  background-color: #f5f5f5;
+  font-family: 'Roboto', sans-serif; }
+  body.no-scroll {
+    overflow: hidden; }
+
+h1 {
+  font-weight: 900;
+  text-transform: uppercase; }
+
+.fsm {
+  margin: 10vh 5vw;
+  background-color: blue;
+  height: 100px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  transform: rotateX(-10deg) rotateY(30deg); }
-
-.Menu-list-item {
-  position: relative;
-  color: transparent;
+  flex-direction: column;
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  transition: 1s;
   cursor: pointer; }
-  .Menu-list-item::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 49%;
-    left: -10%;
-    right: -10%;
-    height: 4px;
-    border-radius: 4px;
-    margin-top: -2px;
-    background: #FF2C75;
-    transform: scale(0);
-    transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
-    z-index: 1; }
-
-.Mask {
-  display: block;
-  position: absolute;
-  overflow: hidden;
-  color: #FF2C75;
-  top: 0;
-  height: 49%;
-  transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98); }
-  .Mask span {
-    display: block; }
-
-.Mask + .Mask {
-  top: 48.9%;
-  height: 51.1%; }
-  .Mask + .Mask span {
-    transform: translateY(-49%); }
-
-.Menu-list-item:hover .Mask,
-.Menu-list-item:active .Mask {
-  color: #FFF;
-  transform: skewX(12deg) translateX(10px); } /* 기울게 하는 역할(skewX -> X축으로 기우는 각도, translateX -> X축으로 얼마나 이동할 것인지 */
-
-.Menu-list-item:hover .Mask + .Mask,
-.Menu-list-item:active .Mask + .Mask {
-  transform: skewX(12deg) translateX(10px); }
-
-.Menu-list-item:hover::before,
-.Menu-list-item:active::before {
-  transform: scale(1); }
+  .fsm .fa {
+    transition: 1s;
+    color: #f5f5f5;
+    font-size: 2.5vw; }
+    .fsm .fa:before {
+      color: #f5f5f5; }
+  .fsm .modal-content{
+    height: 0;
+    width: 0;
+    margin: 0; }
+  .fsm h1.modal-content{
+    opacity: 0;
+    transition: 1s; }
+  .fsm.apple {
+    background: linear-gradient(135deg, #83458e 0%, #608dc9 100%); }
+  .fsm.pied {
+    background: linear-gradient(135deg, #6ecdc7 0%, #c7e4ec 100%); }
+  .fsm.codepen {
+    background: linear-gradient(135deg, #778899 0%, #DCDCDC 100%); }
+  .fsm.google {
+    background: linear-gradient(135deg, #4285f4 0%, #ea4335 100%); }
+  .fsm.full-screen {
+    height: 100vh;
+    z-index: 100;
+    margin: 0;
+    border-radius: 0; }
+    .fsm.full-screen .fa {
+      font-size: 10vw; }
+    .fsm.full-screen .modal-content{
+      height: auto;
+      width: auto;
+      margin: inital; }
+    .fsm.full-screen h1.modal-content{
+      transition-delay: 0.5s;
+      opacity: 1; }
+  .fsm.shrinking h1.modal-content {
+    transition-delay: 0s;
+    transition: 0.5s;
+    opacity: 0;
+    display: flex; }
+  .fsm-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box; }
+    #close{
+      height: inherit;
+      position: absolute;
+      margin: 20px;
+    }
+  /* .fsm:hover, .fsm:active,
+  #close:hover,#close:active{
+    transform: scale(1.5);
+  }
+   */

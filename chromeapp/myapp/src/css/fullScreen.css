@@ -1,0 +1,56 @@
+
+h1 {
+    text-transform: uppercase; }
+  
+  .toDo {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f5f5f5;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer; }
+    .toDo .fa {
+      transition: 1s;
+      color: #f5f5f5;
+      font-size: 2.5vw; }
+      .toDo .fa:before {
+        color: #f5f5f5; }
+    .toDo .modal-content{
+      height: 0;
+      width: 0;
+      margin: 0; }
+    .toDo h1.modal-content{
+      opacity: 0;
+      transition: 1s; }
+    .toDo.page {
+      background: linear-gradient(135deg, #6ecdc7 0%, #c7e4ec 100%); }
+    .toDo.full-screen {
+      height: 100vh;
+      z-index: 100;
+      margin: 0;
+      border-radius: 0; }
+      .toDo.full-screen .fa {
+        font-size: 10vw; }
+      .toDo.full-screen .modal-content{
+        height: auto;
+        width: auto;
+        margin: inital; }
+      .toDo.full-screen h1.modal-content{
+        transition-delay: 0.5s;
+        opacity: 1; }
+    .toDo.shrinking h1.modal-content {
+      transition-delay: 0s;
+      transition: 0.5s;
+      opacity: 0; }
+    .toDo-container {
+      box-sizing: border-box; }
+      #close{
+        height: inherit;
+        position: absolute;
+        margin: 20px;
+        place-self: start;
+      }

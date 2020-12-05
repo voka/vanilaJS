@@ -1,0 +1,14 @@
+@import url(tailwind.css);
+@import url(SliceText.css);
+@import url(fullScreen.css);
+
+.showing{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.form,
+.greeting{
+  display: none;
+}

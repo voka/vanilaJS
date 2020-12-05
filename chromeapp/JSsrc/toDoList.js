@@ -17,8 +17,8 @@ function paintToDo(flag,value){
     const saveBtn = document.createElement('button');
     const saveImage = document.createElement('img');
     //button style start
-    delImage.setAttribute("src","img/X.png");
-    saveImage.setAttribute("src","img/save.jpg");
+    delImage.setAttribute("src","../img/X.png");
+    saveImage.setAttribute("src","../img/save.jpg");
     delImage.style.width = '25px';
     saveImage.style.width = '25px';
     delImage.style.height = '25px';

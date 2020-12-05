@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class = "h-full">
+<head>
+    <title>Something</title>
+    <link rel="stylesheet" href="src/css/index.css">
+</head>
+<body class ="h-full grid grid-cols-1 gird-rows-6">
+    <div class = "js-clock place-self-center row-span-5 self-center">
+            <div class = "today text-center font-mono font-black text-9xl text-red-700 text-opacity-75"></div>
+            <form class="js-form form rounded-full mt-10 px-3 py-1 border-2 border-black">
+                <input type="text" class = "outline-none w-full text-center font-mono font-black text-3xl" placeholder="What is your name?">
+            </form>
+            <h4 class = "js-greetings greeings mt-10 w-full text-center font-mono font-black text-5xl"></h4>
+    </div>
+        <!-- @NOTE: the onclicks are used for touch devices since I'm lazy and didnt use <a> tags -->
+    <div id="toDo_container" class="toDo-container place-self-center self-start w-1/2">
+        <div class="toDo page w-full"><span class = "text-center w-full superStar">toDo List of superStar</span> 
+            <h1 class="modal-content w-full">
+                <div class = "grid grid-cols-1">
+                    <div class="toDo">
+                        <form class="js-toDoForm">
+                            <input type="text" class="js-toDoInput outline-none w-full text-center font-mono font-black text-black text-3xl" placeholder="What happening ?">
+                        </form>
+                        <ul class ="js-toDoList toDo-list">
+                        </ul>
+                        <ul class="toDo-list">
+                        <li class="flex">   
+                            <div class="toDo-list-item">
+                                Home
+                                <span class="Mask font-black"><span>Home</span></span>
+                                <span class="Mask font-black"><span>Home</span></span>
+                            </div>
+                            <button class = "relative text-black">123</button>
+                            
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </h1>
+        </div>
+    </div>
+     <script src ="src/javascript/Screen.js"></script>
+     <script src ="src/javascript/clock.js"></script>
+     <script src ="src/javascript/greeting.js"></script>
+     <script>history.scrollRestoration = "manual"</script>
+</body>
+</html> 
