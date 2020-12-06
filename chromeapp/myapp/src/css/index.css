@@ -1,14 +1,54 @@
 @import url(tailwind.css);
 @import url(SliceText.css);
 @import url(fullScreen.css);
+@import url(popup.css);
 
+.js-form{
+  display: none;
+}
 .showing{
   display: block;
 }
 .hide{
   display: none;
 }
-.form,
-.greeting{
-  display: none;
+
+.topLayout{
+  z-index: 100;
+}
+.today{
+  color:#EBC0FA;
+}
+
+.js-weather{
+  color:white;
+  margin: 2px;
+  float:left;
+}
+
+.bg_image{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.2s linear;
+}
+
+body{
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.reset_B{
+  color: white;
+  border: currentColor;
+  margin: 15px 10px;
+  float: right;
+}
+
+.clearToDo{
+  width: 50px;
+  height: 50px;
+  background-image: url("../../img/clear.jpg");
+  
 }

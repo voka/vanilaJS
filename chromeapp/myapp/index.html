@@ -5,43 +5,77 @@
     <link rel="stylesheet" href="src/css/index.css">
 </head>
 <body class ="h-full grid grid-cols-1 gird-rows-6">
-    <div class = "js-clock place-self-center row-span-5 self-center">
-            <div class = "today text-center font-mono font-black text-9xl text-red-700 text-opacity-75"></div>
-            <form class="js-form form rounded-full mt-10 px-3 py-1 border-2 border-black">
-                <input type="text" class = "outline-none w-full text-center font-mono font-black text-3xl" placeholder="What is your name?">
-            </form>
-            <h4 class = "js-greetings greeings mt-10 w-full text-center font-mono font-black text-5xl"></h4>
+    <div>
+        <p class = "js-weather font-mono font-black text-center text-3xl" ></p>
+        <button type="button" class="reset_B   font-mono font-black text-center text-3xl">Reset</button>
     </div>
-        <!-- @NOTE: the onclicks are used for touch devices since I'm lazy and didnt use <a> tags -->
+    <div id="popupName" class="overlay">
+        <div class="popup">
+          <h1 class="text-center text-3xl">Warning</h1>
+          <a class="close text-2xl" href="#">&times;</a>
+          <div class="content text-center fon-mono text-3xl mt-10 h-full">
+            Please write your Name First!
+          </div>
+        </div>
+      </div>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+          <h1 class="text-center text-3xl">Warning</h1>
+          <a class="close text-2xl" href="#">&times;</a>
+          <div class="content text-center fon-mono text-3xl mt-10 h-full">
+            Please write your to do!
+          </div>
+        </div>
+      </div>
+      <div id="popup2" class="overlay">
+        <div class="popup">
+          <h1 class="text-center text-3xl">Warning</h1>
+          <a class="close text-2xl" href="#">&times;</a>
+          <div class="content text-center fon-mono text-3xl mt-10 h-full">
+            That is too long.
+          </div>
+        </div>
+      </div>
+      <div id="popup3" class="overlay">
+        <div class="popup">
+          <h1 class="text-center text-3xl">Warning</h1>
+          <a class="close text-2xl" href="#">&times;</a>
+          <div class="content text-center fon-mono text-3xl mt-10 h-full">
+            There are too many things to do.
+          </div>
+        </div>
+      </div>
+    <div class = "js-clock place-self-center row-span-5 self-center">
+        <div class = "today text-center font-mono font-black text-9xl text-opacity-75"></div>
+        <form class="js-form form rounded-full mt-10 px-3 py-1 bg-white">
+            <input type="text" class = "outline-none w-full text-center font-mono font-black text-3xl" placeholder="What is your name?">
+        </form>
+        <h1 class = "js-greetings greeings mt-10 w-full text-center font-mono font-black text-yellow-700 text-5xl"></h4>
+    </div>
+    <a class="button0 hidden" href="#popupName"></a>
+    <a class="button1 hidden" href="#popup1"></a>
+    <a class="button2 hidden" href="#popup2"></a>
+    <a class="button3 hidden" href="#popup3"></a>
     <div id="toDo_container" class="toDo-container place-self-center self-start w-1/2">
-        <div class="toDo page w-full"><span class = "text-center w-full superStar">toDo List of superStar</span> 
-            <h1 class="modal-content w-full">
-                <div class = "grid grid-cols-1">
-                    <div class="toDo">
-                        <form class="js-toDoForm">
-                            <input type="text" class="js-toDoInput outline-none w-full text-center font-mono font-black text-black text-3xl" placeholder="What happening ?">
-                        </form>
-                        <ul class ="js-toDoList toDo-list">
-                        </ul>
-                        <ul class="toDo-list">
-                        <li class="flex">   
-                            <div class="toDo-list-item">
-                                Home
-                                <span class="Mask font-black"><span>Home</span></span>
-                                <span class="Mask font-black"><span>Home</span></span>
-                            </div>
-                            <button class = "relative text-black">123</button>
-                            
-                        </li>
-                        </ul>
-                    </div>
+        <div class="toDo page w-full"><span class = "text-center font-mono font-black text-5xl w-full superStar">toDo List of superStar</span> 
+            <h1 class="modal-content w-full grid grid-cols-1">
+                <div class="toDo">
+                    <form class="js-toDoForm w-full">
+                        <input type="text" class="js-toDoInput outline-none rounded-full px-3 py-1 w-full text-center font-mono font-black text-black text-3xl" placeholder="What do you want to do ?">
+                        <input type="button" class="clearToDo absolute" placeholder="clear">
+                    </form>
+                    <ul class ="js-toDoList toDo-list mt-5 w-full">
+                    </ul>
                 </div>
             </h1>
         </div>
     </div>
-     <script src ="src/javascript/Screen.js"></script>
+     <script src ="src/javascript/Screen_toDo.js"></script>
      <script src ="src/javascript/clock.js"></script>
      <script src ="src/javascript/greeting.js"></script>
+     <script src ="src/javascript/image.js"></script>
+     <script src ="src/javascript/weather.js"></script>
+     <script src ="src/javascript/reset.js"></script>
      <script>history.scrollRestoration = "manual"</script>
 </body>
 </html> 

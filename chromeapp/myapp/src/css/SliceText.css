@@ -1,8 +1,8 @@
 
 .toDo-list {
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.2;
-  text-transform: uppercase;
+  white-space: nowrap;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -12,20 +12,6 @@
   position: relative;
   color: transparent;
   cursor: pointer; }
-  .toDo-list-item::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 49%;
-    left: -10%;
-    right: -10%;
-    height: 4px;
-    border-radius: 4px;
-    margin-top: -2px;
-    background: #FF2C75;
-    transform: scale(0);
-    transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
-    z-index: 1; }
 
 .Mask {
   display: block;
@@ -44,15 +30,21 @@
   .Mask + .Mask span {
     transform: translateY(-49%); }
 
-.toDo-list-item:hover .Mask,
-.toDo-list-item:active .Mask {
-  color: #FFF;
-  transform: scale(1) skewX(12deg) translateX(10px); } /* 기울게 하는 역할(skewX -> X축으로 기우는 각도, translateX -> X축으로 얼마나 이동할 것인지 */
+  button:hover{
+    transform: scale(1.5);
+  }
+  .sliceText_hover:hover,
+  .sliceText_active:active{
+    color: #FF2C75;
+    transform: scale(1) skewX(12deg) translateX(10px);
+    transform: skewX(12deg) translateX(-10px);
+  }
 
-.toDo-list-item:hover .Mask + .Mask,
-.toDo-list-item:active .Mask + .Mask {
-  transform: skewX(12deg) translateX(10px); }
-
-.toDo-list-item:hover::before,
-.toDo-list-item:active::before {
-  transform: scale(1); }
+  .sliceText1{
+    color: #ff0101;
+    transform: scale(1) skewX(12deg) translateX(10px);
+  }
+  .sliceText2{
+    color: #ff0101;
+    transform: skewX(12deg) translateX(-10px);
+  }
